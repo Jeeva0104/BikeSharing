@@ -10,14 +10,24 @@ The company wants to know:
 
 # Conclusion
 
-Significant variables to predict the demand for shared bikes
+### Model Equation for Predicting Bike Rentals (`cnt`)
 
-- temp
-- hum
-- windspeed
-- Season (Summer,Winter)
-- months(July, September)
-- Year (2019)
-- workingday
-- holiday
-- weathersit( Light Snow, Mist + Cloudy)
+The regression equation for predicting bike rentals (`cnt`) is:
+
+\[
+cnt = (0.5102 \times temp) + (-0.1496 \times hum) + (-0.1820 \times windspeed) + (0.1092 \times season\_summer) + (0.1540 \times season\_winter) + (-0.0548 \times weather\_mist\_cloud) + (-0.2389 \times weather\_light\_snow\_rain) + (0.0680 \times yr\_q3) + (-0.0745 \times holiday) + (0.0182 \times workingday) + (0.2292 \times yr\_2019) + (0.2119)
+\]
+
+#### **Variable Descriptions:**
+- `temp` = Normalized temperature
+- `hum` = Normalized humidity
+- `windspeed` = Normalized wind speed
+- `season_summer`, `season_winter` = One-hot encoded season variables
+- `weather_mist_cloud`, `weather_light_snow_rain` = One-hot encoded weather conditions
+- `yr_q3` = Indicator for third quarter of the year
+- `holiday` = Whether the day is a holiday (1 = Yes, 0 = No)
+- `workingday` = Whether the day is a working day (1 = Yes, 0 = No)
+- `yr_2019` = Indicator for the year 2019
+- The constant term is **0.2119**
+
+
