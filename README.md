@@ -15,7 +15,7 @@ The company wants to know:
 The regression equation for predicting bike rentals (`cnt`) is:
 
 \[
-cnt = (0.5102 \times temp) + (-0.1496 \times hum) + (-0.1820 \times windspeed) + (0.1092 \times season\_summer) + (0.1540 \times season\_winter) + (-0.0548 \times weather\_mist\_cloud) + (-0.2389 \times weather\_light\_snow\_rain) + (0.0680 \times yr\_q3) + (-0.0745 \times holiday) + (0.0182 \times workingday) + (0.2292 \times yr\_2019) + (0.2119)
+cnt = (0.5102 * temp) + (-0.1496 * hum) + (-0.1820 * windspeed) + (0.1092 * season\_summer) + (0.1540 * season\_winter) + (-0.0548 * weather\_mist\_cloud) + (-0.2389 * weather\_light\_snow\_rain) + (0.0680 * yr\_q3) + (-0.0745 * holiday) + (0.0182 * workingday) + (0.2292 * yr\_2019) + (0.2119)
 \]
 
 #### **Variable Descriptions:**
