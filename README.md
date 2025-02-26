@@ -8,3 +8,16 @@ The company wants to know:
 - Which variables are significant in predicting the demand for shared bikes.
 - How well those variables describe the bike demands
 
+# Conclusion
+
+Significant variables to predict the demand for shared bikes
+
+- temp
+- hum
+- windspeed
+- Season (Summer,Winter)
+- months(July, September)
+- Year (2019)
+- workingday
+- holiday
+- weathersit( Light Snow, Mist + Cloudy)
